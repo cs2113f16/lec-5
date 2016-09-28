@@ -4,7 +4,8 @@ public class LNode {
   public LNode next;
   
   public LNode(int data) {
-    // fill in
+    this.data = data;
+    next = null;
   }
   
   

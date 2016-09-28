@@ -3,7 +3,7 @@ public class LList {
   public LNode head;
   
   public LList() {
-    // fill in
+    head = null;
   }
   
   public void print_list(){
@@ -19,7 +19,14 @@ public class LList {
   public static void main (String[] argv)
   {
     LList list = new LList();
-    // fill in
+    LNode a, b, c;
+    a = new LNode(45);
+    b = new LNode(89);
+    c = new LNode(52);
+    list.head = a;
+    a.next = b;
+    b.next = c;
+    c.next = null;
     
     list.print_list();
   }
