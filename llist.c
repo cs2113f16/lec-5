@@ -11,7 +11,21 @@ struct LList {
 };
 
 void LList_print(struct LList *list) {
-  
+  struct LNode *node;
+  int i = 0;
+  if (list == NULL) 
+    return;
+  node = list->head;
+  if (node == NULL)
+    return;
+  while(1) {
+    i++;
+    printf("%d: %d\n", i, node->data);
+    node = node->next;
+    if(node == NULL) {
+      break;
+    }
+  }
 }
 
 int main() {
